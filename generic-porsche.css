@@ -9,7 +9,6 @@ src: url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-
 src: url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-latin/PorscheNextWLa-Thin.eot?#iefix") format("embedded-opentype"), url("/fonts/Porsche_Next_Lat-Gr-Cyr_Web/WOFF-2-TT/Porsche Next WebLatin/Fonts/PorscheNextWLa-Thin.woff2") format("woff2"), url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-latin/PorscheNextWLa-Thin.woff") format("woff"), url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-latin/PorscheNextWLa-Thin.ttf") format("truetype"), url("/fonts/Porsche_Next_Lat-Gr-Cyr_Web/SVG-PS/Porsche Next WebLatin/Fonts/PorscheNextWLa-Thin.svg#PorscheNextWLa-Thin") format("svg");
 }
 
-
 @font-face {
 font-family: "PorscheNext-Regular";
 font-weight: normal;
@@ -17,7 +16,6 @@ font-style: normal;
 src: url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-latin/PorscheNextWLa-Regular.eot");
 src: url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-latin/PorscheNextWLa-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Porsche_Next_Lat-Gr-Cyr_Web/WOFF-2-TT/Porsche Next WebLatin/Fonts/PorscheNextWLa-Regular.woff2") format("woff2"), url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-latin/PorscheNextWLa-Regular.woff") format("woff"), url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-latin/PorscheNextWLa-Regular.ttf") format("truetype"), url("/fonts/Porsche_Next_Lat-Gr-Cyr_Web/SVG-PS/Porsche Next WebLatin/Fonts/PorscheNextWLa-Regular.svg#PorscheNextWLa-Regular") format("svg");
 }
-
 
 @font-face {
 font-family: "PorscheNext-Bold";
@@ -31,6 +29,64 @@ src: url("https://cdn.ui.porsche.com/porsche-design-system/font/v1/porsche-next-
 font-family: "pag-iconfont";
 src: url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.eot");
 src: url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.eot?#iefix") format("embedded-opentype"), url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.woff") format("woff"), url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.ttf") format("truetype"), url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.svg#pag-iconfont") format("svg");
+}
+
+
+.acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
+font-family: "PorscheNext-Bold", sans-serif;
+font-weight: 700;
+line-height: 1.2;
+}
+
+.acs-h1 {
+font-size: 2rem;
+}
+
+.acs-h2 {
+font-size: 1.8rem;
+}
+
+.acs-h3 {
+font-size: 1.6rem;
+}
+
+.acs-h4 {
+font-size: 1.4rem;
+}
+
+.acs-h5 {
+font-size: 1.2rem;
+}
+
+.acs-h6 {
+font-size: 1.1rem;
+}
+
+/* Larger than phablet */
+@media (min-width: 575px) {
+.acs-h1 {
+font-size: 2.5rem !important;
+}
+
+.acs-h2 {
+font-size: 2.2rem !important;
+}
+
+.acs-h3 {
+font-size: 1.8rem !important;
+}
+
+.acs-h4 {
+font-size: 1.6rem !important;
+}
+
+.acs-h5 {
+font-size: 1.4rem !important;
+}
+
+.acs-h6 {
+font-size: 1.2rem !important;
+}
 }
 
 .acs-wrapper { 
