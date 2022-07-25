@@ -1,3 +1,4 @@
+/* OEM Font Embed */
 @charset "UTF-8";
 
 /* Font */
@@ -30,8 +31,20 @@ font-family: "pag-iconfont";
 src: url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.eot");
 src: url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.eot?#iefix") format("embedded-opentype"), url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.woff") format("woff"), url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.ttf") format("truetype"), url("https://www.porsche.com/fonts/pag-iconfont/pag-iconfont.svg#pag-iconfont") format("svg");
 }
+/* OEM Font Embed */
 
 
+
+/* OEM Font */
+.acs-wrapper { 
+font-family: "PorscheNext-Regular", sans-serif;
+font-weight: normal;
+}
+/* OEM Font */
+
+
+
+/* Heading Tags */
 .acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
 font-family: "PorscheNext-Bold", sans-serif;
 font-weight: 700;
@@ -88,15 +101,32 @@ font-size: 1.4rem !important;
 font-size: 1.2rem !important;
 }
 }
+/* Heading Tags */
 
-.acs-wrapper { 
-font-family: "PorscheNext-Regular", sans-serif
+
+
+/* OEM Font Variables */
+.porsche-brand-lt {
+font-family: "PorscheNext-Thin" !important; 
+font-weight: 100 !important;
+}
+
+.porsche-brand-rg {
+font-family: "PorscheNext-Regular" !important;
+font-weight: normal !important;
+}
+
+.porsche-brand-bd {
+font-family: "PorscheNext-Bold" !important;
+font-weight: 700 !important;
 }
 
 .acs-bold {
 font-family: var(--bold-font);   
 font-weight: 700;
 }
+/* OEM Font Variables */
+
 
 
 /* Variables */
@@ -110,6 +140,7 @@ font-weight: 700;
 --dark2: #192022;
 --bold-font: "PorscheNext-Bold", sans-serif;
 }
+/* Variables */
 
 
 
@@ -129,6 +160,8 @@ color: var(--dark)
 .acs-dark2 {
 color: var(--dark2)
 }
+/* Text Colors */
+
 
 
 /* Accent Colors */
@@ -138,32 +171,37 @@ color: var(--accent)
 .acs-accent2 {
 color: var(--accent2)
 }
+/* Accent Colors */
 
 
 
 /* BG Colors */
 .acs-bg-accent {
-background-color: var(--accent)
+--acs-bg-opacity: 1;
+background-color: var(--accent);
+background-color: rgba(213,0,28, var(--acs-bg-opacity))
 }
 .acs-bg-accent2 {
-background-color: var(--accent2)
-}
-.acs-bg-black {
-background-color: var(--black)
-}
-.acs-bg-white {
-background-color: var(--white)
+--acs-bg-opacity: 1;
+background-color: var(--accent2);
+background-color: rgba(145,1,24, var(--acs-bg-opacity))
 }
 .acs-bg-gray {
-background-color: var(--gray)
+--acs-bg-opacity: 1;
+background-color: var(--gray);
+background-color: rgba(239,240,241, var(--acs-bg-opacity))
 }
 .acs-bg-dark {
-background-color: var(--dark)
+--acs-bg-opacity: 1;
+background-color: var(--dark);
+background-color: rgba(49,54,57, var(--acs-bg-opacity))
 }
 .acs-bg-dark2 {
-background-color: var(--dark2)
+--acs-bg-opacity: 1;
+background-color: var(--dark2);
+background-color: rgba(25,32,34, var(--acs-bg-opacity))
 }
-
+/* BG Colors */
 
 
 
@@ -196,6 +234,8 @@ transition: all 0.2s ease-in-out 0s;
 .acs-link-accent3:hover {
 color: var(--accent2) !important; 
 }
+/* Link Accent */
+
 
 
 /* BUTTONS: START */
@@ -341,6 +381,7 @@ overflow: hidden;
 margin-top: -.5em;
 position: absolute;
 }
+/* Button Icon */
 
 
 
@@ -349,6 +390,7 @@ position: absolute;
 display: inline-flex;
 -moz-osx-font-smoothing: grayscale;
 position: relative;
+padding: 0rem 1rem 0rem
 }
 .acs-heading-porsche-icon::before {
 font-family: "pag-iconfont";
@@ -358,7 +400,9 @@ top: 50%;
 overflow: hidden;
 margin-top: -.6em;
 position: absolute;
+font-size: 75%
 }
+/* Heading Icon */
 
 
 
@@ -378,3 +422,4 @@ top: 0%;
 overflow: hidden;
 position: absolute;
 }
+/* Link Accent Icon */
