@@ -135,9 +135,15 @@ font-weight: 700;
 --accent2: #910119;
 --black: #000000; 
 --white: #ffffff; 
---gray: #EFF0F1; 
+--gray: #EFF0F1;
+--gray2: #535457;
+--gray3: #949598;
+--gray4: #6b6d70; 
+--gray5: #afb0b3; 
+--gray6: #88898c; 
 --dark: #313639; 
 --dark2: #192022;
+--dark3: #010205;
 --bold-font: "PorscheNext-Bold", sans-serif;
 }
 /* Variables */
@@ -154,11 +160,29 @@ color: var(--white)
 .acs-gray {
 color: var(--gray)
 }
+.acs-gray2 {
+color: var(--gray2)
+}
+.acs-gray3 {
+color: var(--gray3)
+}
+.acs-gray4 {
+color: var(--gray4)
+}
+.acs-gray5 {
+color: var(--gray5)
+}
+.acs-gray6 {
+color: var(--gray6)
+}
 .acs-dark {
 color: var(--dark)
 }
 .acs-dark2 {
 color: var(--dark2)
+}
+.acs-dark3 {
+color: var(--dark3)
 }
 /* Text Colors */
 
@@ -191,6 +215,31 @@ background-color: rgba(145,1,24, var(--acs-bg-opacity))
 background-color: var(--gray);
 background-color: rgba(239,240,241, var(--acs-bg-opacity))
 }
+.acs-bg-gray2 {
+--acs-bg-opacity: 1;
+background-color: var(--gray2);
+background-color: rgba(83,84,87, var(--acs-bg-opacity))
+}
+.acs-bg-gray3 {
+--acs-bg-opacity: 1;
+background-color: var(--gray3);
+background-color: rgba(148,149,152, var(--acs-bg-opacity))
+}
+.acs-bg-gray4 {
+--acs-bg-opacity: 1;
+background-color: var(--gray4);
+background-color: rgba(107,109,112, var(--acs-bg-opacity))
+}
+.acs-bg-gray5 {
+--acs-bg-opacity: 1;
+background-color: var(--gray5);
+background-color: rgba(175,176,179, var(--acs-bg-opacity))
+}
+.acs-bg-gray6 {
+--acs-bg-opacity: 1;
+background-color: var(--gray6);
+background-color: rgba(136,137,140, var(--acs-bg-opacity))
+}
 .acs-bg-dark {
 --acs-bg-opacity: 1;
 background-color: var(--dark);
@@ -200,6 +249,11 @@ background-color: rgba(49,54,57, var(--acs-bg-opacity))
 --acs-bg-opacity: 1;
 background-color: var(--dark2);
 background-color: rgba(25,32,34, var(--acs-bg-opacity))
+}
+.acs-bg-dark3 {
+--acs-bg-opacity: 1;
+background-color: var(--dark2);
+background-color: rgba(1,2,5, var(--acs-bg-opacity))
 }
 /* BG Colors */
 
@@ -213,7 +267,7 @@ transition: all 0.2s ease-in-out 0s;
 }
 .acs-link-accent:hover {
 text-decoration: underline;
-color: var(--accent) !important; 
+color: var(--gray2) !important; 
 }
 
 .acs-link-accent2 {
@@ -223,7 +277,7 @@ transition: all 0.2s ease-in-out 0s;
 }
 .acs-link-accent2:hover {
 text-decoration: underline;
-color: var(--accent) !important; 
+color: var(--gray5) !important; 
 }
 
 .acs-link-accent3 {
@@ -241,147 +295,104 @@ color: var(--accent2) !important;
 /* BUTTONS: START */
 /* Button 1 */
 .acs-button {
-background-color: var(--accent);
-display: inline-block;
+background-color: var(--dark3);
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
 color: var(--white);
-border: solid 1px var(--accent);
+border: solid 2px var(--dark3);
+border-radius: 4px;
 text-decoration: none !important;
-padding: 17px 21px 17px 32px;
+padding: 13px 26px 13px 26px;
 line-height: 1;
 font-size: .875rem;
 letter-spacing: .5px;
-min-width: 180px;
+min-width: 54px;
+min-height: 54px;
 transition: background-color .24s,color .24s,border-color .24s;
 }
 .acs-button:hover {
-background-color: var(--accent2);
+background-color: var(--gray2);
 color: var(--white);
-border: solid 1px var(--accent2)
+border: solid 1px var(--gray2)
 }
 
 /* Button 2 */
 .acs-button2 {
-background-color: var(--dark);
-display: inline-block;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
-color: var(--white);
-border: solid 1px var(--dark);
+color: var(--dark3);
+border: solid 2px var(--dark3);
+border-radius: 4px;
 text-decoration: none !important;
-padding: 17px 21px 17px 32px;
+padding: 13px 26px 13px 26px;
 line-height: 1;
 font-size: .875rem;
 letter-spacing: .5px;
-min-width: 180px;
+min-width: 54px;
+min-height: 54px;
 transition: background-color .24s,color .24s,border-color .24s;
 }
 .acs-button2:hover {
-background-color: var(--accent);
-color: var(--white);
-border: solid 1px var(--accent)
+background-color: rgba(148, 149, 152, 0.18);
+color: var(--dark3);
+border: solid 2px var(--gray4)
 }
 
 /* Button 3 */
 .acs-button3 {
-background-color: transparent;
-display: inline-block;
+background-color: var(--white);
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
-color: var(--dark);
-border: solid 1px var(--dark);
+color: var(--dark3);
+border: solid 2px var(--white);
+border-radius: 4px;
 text-decoration: none !important;
-padding: 17px 21px 17px 32px;
+padding: 13px 26px 13px 26px;
 line-height: 1;
 font-size: .875rem;
 letter-spacing: .5px;
-min-width: 180px;
+min-width: 54px;
+min-height: 54px;
 transition: background-color .24s,color .24s,border-color .24s;
 }
 .acs-button3:hover {
-color: var(--accent);
-border: solid 1px var(--accent)
+background-color: var(--gray5);
+color: var(--dark3);
+border: solid 1px var(--gray5)
 }
 
 /* Button 4 */
 .acs-button4 {
 background-color: transparent;
-display: inline-block;
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
 color: var(--white);
-border: solid 1px var(--white);
+border: solid 2px var(--white);
+border-radius: 4px;
 text-decoration: none !important;
-padding: 17px 21px 17px 32px;
+padding: 13px 26px 13px 26px;
 line-height: 1;
 font-size: .875rem;
 letter-spacing: .5px;
-min-width: 180px;
+min-width: 54px;
+min-height: 54px;
 transition: background-color .24s,color .24s,border-color .24s;
 }
 .acs-button4:hover {
-color: var(--accent);
-border: solid 1px var(--accent)
-}
-
-/* Button 5 */
-.acs-button5 {
-background-color: var(--white);
-display: inline-block;
-text-align: center;
-color: var(--dark);
-border: solid 1px var(--white);
-text-decoration: none !important;
-padding: 17px 21px 17px 32px;
-line-height: 1;
-font-size: .875rem;
-letter-spacing: .5px;
-min-width: 180px;
-transition: background-color .24s,color .24s,border-color .24s;
-}
-.acs-button5:hover {
-background-color: var(--accent);
+background-color: rgba(148, 149, 152, 0.18);
 color: var(--white);
-border: solid 1px var(--accent)
-}
-
-/* Button 6 */
-.acs-button6 {
-background-color: var(--white);
-display: inline-block;
-text-align: center;
-color: var(--dark);
-border: solid 1px var(--white);
-text-decoration: none !important;
-padding: 17px 21px 17px 32px;
-line-height: 1;
-font-size: .875rem;
-letter-spacing: .5px;
-min-width: 180px;
-transition: background-color .24s,color .24s,border-color .24s;
-}
-.acs-button5:hover {
-background-color: var(--accent);
-color: var(--white);
-border: solid 1px var(--accent)
+border: solid 2px var(--gray6)
 }
 /* BUTTONS: END */
-
-
-
-/* Button Icon */
-.acs-porsche-icon {
-display: inline-flex;
--moz-osx-font-smoothing: grayscale;
-position: relative;
-}
-.acs-porsche-icon::before {
-font-family: "pag-iconfont";
-content: "";
-margin-left: -1.1em;
-top: 50%;
-overflow: hidden;
-margin-top: -.5em;
-position: absolute;
-}
-/* Button Icon */
 
 
 
@@ -416,7 +427,7 @@ padding: 0rem 1rem
 .asc-link-accent-icon::before {
 font-family: "pag-iconfont";
 content: "";
-color: var(--accent) !important; 
+color: inherit!important; 
 margin-left: -20%;
 top: 0%;
 overflow: hidden;
