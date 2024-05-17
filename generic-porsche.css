@@ -203,12 +203,10 @@ color: var(--accent2)
 .acs-bg-accent {
 --acs-bg-opacity: 1;
 background-color: var(--accent);
-background-color: rgba(1,2,5, var(--acs-bg-opacity))
 }
 .acs-bg-accent2 {
 --acs-bg-opacity: 1;
 background-color: var(--accent2);
-background-color: rgba(1,2,5, var(--acs-bg-opacity))
 }
 .acs-bg-gray {
 --acs-bg-opacity: 1;
@@ -252,7 +250,10 @@ background-color: rgba(25,32,34, var(--acs-bg-opacity))
 }
 .acs-bg-dark3 {
 --acs-bg-opacity: 1;
-background-color: var(--dark2);
+background-color: var(--dark3);
+}
+.acs-bg-accent, .acs-bg-accent2, .acs-bg-dark3 {
+--acs-bg-opacity: 1;
 background-color: rgba(1,2,5, var(--acs-bg-opacity))
 }
 /* BG Colors */
